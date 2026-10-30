@@ -1,0 +1,3 @@
+coopledger:
+  security:
+    secret: ${JWT_SECRET_BASE64:bG9jYWwtY29vcGxlZGdlci1kZW1vLWtleS0zMi1ieXRlcy1taW5pbXVt}
