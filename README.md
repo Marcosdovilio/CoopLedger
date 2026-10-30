@@ -166,6 +166,8 @@ SPRING_PROFILES_ACTIVE=local DB_URL=jdbc:postgresql://localhost:15433/operations
 
 [Guia de demonstração e recuperação](docs/demo.md). A pipeline em `.github/workflows/ci.yml` executa `verify` e guarda relatórios JUnit.
 
+[Evidências de validação](docs/verification.md): 31 testes locais aprovados, fluxo HTTP e recuperação Kafka no Compose, métricas e dashboard conferidos. A execução da pipeline em runner remoto ainda não foi registrada pelo GitHub nesta entrega.
+
 O dashboard acompanha transferências por resultado, latência p95, HTTP 5xx, quantidade/idade de eventos pendentes e consumo/duplicação. Contadores de transferência medem chamadas concluídas, repetidas, recusadas ou com erro; uma repetição não conta como nova movimentação financeira.
 
 [Casos para issues e PRs](docs/issues.md) trazem reprodução, testes e correções presentes neste código. O desenvolvimento é revisado em PRs encadeados no [repositório GitHub](https://github.com/Marcosdovilio/CoopLedger/pulls), com uma issue para cada entrega.
