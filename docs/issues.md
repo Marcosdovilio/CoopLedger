@@ -2,6 +2,16 @@
 
 As entregas são organizadas em cinco issues e cinco PRs encadeados. Cada PR usa o anterior como base para manter a revisão focada; a integração deve seguir a ordem 1 → 5. Os cenários abaixo documentam requisitos e falhas evitadas, não incidentes de produção.
 
+| Ordem | Issue | Pull request |
+| --- | --- | --- |
+| 1 — Core | [#1](https://github.com/Marcosdovilio/CoopLedger/issues/1) | [#6](https://github.com/Marcosdovilio/CoopLedger/pull/6) |
+| 2 — Consistência e acesso | [#2](https://github.com/Marcosdovilio/CoopLedger/issues/2) | [#7](https://github.com/Marcosdovilio/CoopLedger/pull/7) |
+| 3 — Eventos | [#3](https://github.com/Marcosdovilio/CoopLedger/issues/3) | [#8](https://github.com/Marcosdovilio/CoopLedger/pull/8) |
+| 4 — Operação | [#4](https://github.com/Marcosdovilio/CoopLedger/issues/4) | [#9](https://github.com/Marcosdovilio/CoopLedger/pull/9) |
+| 5 — Apresentação | [#5](https://github.com/Marcosdovilio/CoopLedger/issues/5) | [#10](https://github.com/Marcosdovilio/CoopLedger/pull/10) |
+
+Após integrar cada PR, ajuste a base do seguinte para main antes de integrá-lo. As issues são ligadas por Closes nas descrições dos PRs. Nenhum merge foi executado automaticamente.
+
 | Entrega | Reprodução / risco | Implementação e evidência |
 | --- | --- | --- |
 | Core transacional | Transferir R$ 30 de R$ 100 para zero; uma falha não pode deixar débito isolado | Contas, razão, transferências, outbox e conciliação; migrations e constraints diferidas |
