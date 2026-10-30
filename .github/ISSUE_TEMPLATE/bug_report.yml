@@ -1,0 +1,19 @@
+name: Defeito reproduzível
+description: Registrar uma falha com evidências e teste de regressão
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Como reproduzir
+      description: Requisição, configuração e passos exatos; use apenas dados fictícios.
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado e resultado observado
+    validations: {required: true}
+  - type: textarea
+    id: regression
+    attributes:
+      label: Teste de regressão e evidências
+    validations: {required: true}
